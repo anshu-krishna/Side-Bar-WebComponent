@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Side-Bar Example</title>
+	<script src="side-bar.js"></script>
+	<style>
+		button {
+			padding: 10px 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<side-bar>
+		<span style="display:block; text-align:center;" slot="title">Side-Bar</span>
+		<div style="padding: 10px 20px; text-align:justify;">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis cupiditate placeat aut ratione ad
+			accusantium assumenda maxime ipsum atque, tempora excepturi sunt eius dignissimos quaerat? Minima, excepturi id!
+			Odit mollitia blanditiis, esse aliquam cupiditate neque modi. Porro quia explicabo, nemo accusantium ad numquam
+			neque eveniet perferendis obcaecati, quos quisquam eum maiores maxime quam? Ex, repellendus quibusdam eum fuga animi
+			quasi officia consectetur, commodi, minima voluptate consequatur consequuntur sequi obcaecati recusandae harum
+			doloribus est perspiciatis. Est in, delectus cumque, provident facilis praesentium voluptates illum quis atque
+			eveniet maxime deserunt incidunt commodi excepturi eos? Ipsum, aliquid. Natus ipsam perferendis pariatur itaque!
+		</div>
+	</side-bar>
+
+	<button>Show Sidebar</button>
+	
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto soluta omnis placeat eum sed beatae voluptate.
+		Aperiam quibusdam atque a omnis amet molestias possimus dolores hic iste, doloremque optio non ad odit excepturi
+		libero earum cumque maiores distinctio eligendi sint unde quia. Tenetur possimus placeat velit libero fuga corrupti
+		vero quod voluptatibus corporis qui saepe delectus dolorum eum maxime, dolore ullam reiciendis? Facilis possimus cum
+		porro modi, similique quo eos earum dicta sunt? Non odit cum voluptatum autem aliquam, laborum quibusdam illum
+		recusandae vero reiciendis? Vel voluptate quae debitis quisquam asperiores ullam labore suscipit assumenda cumque
+		officia, molestias, ea, perferendis aspernatur sequi eius commodi! Itaque, praesentium? Maiores libero aliquam vero
+		iusto delectus expedita eaque dolore perferendis quaerat a qui porro similique aperiam odio et odit nam assumenda,
+		totam, quis incidunt magni reprehenderit quod quia tempora? Deleniti ipsa doloremque perspiciatis ex obcaecati minus
+		quasi adipisci aliquid facilis ducimus iusto unde mollitia assumenda culpa, recusandae distinctio labore enim?
+		Blanditiis officia sapiente eos cumque tenetur, eaque ea libero minus delectus maxime repellendus nisi est officiis
+		nesciunt repellat, nobis minima. Nam ut eligendi facilis reiciendis totam nemo tempore earum illo autem fugit, porro,
+		explicabo ipsam repellat dignissimos optio sed a nulla veritatis distinctio odio necessitatibus praesentium impedit
+		aperiam? Iste possimus optio tenetur delectus perferendis illum quos odio quibusdam nisi animi similique recusandae
+		quam, consectetur ea est, eligendi, iure dolorum ex. Inventore ea, doloribus deleniti voluptate, et rem quam sequi
+		quaerat debitis, cupiditate harum praesentium. Exercitationem laudantium dolorum nam minima quis, tenetur quasi
+		sequi, eveniet perspiciatis rerum delectus laborum quidem mollitia numquam quia aliquid esse aliquam alias
+		praesentium sit incidunt odio. In voluptas tenetur omnis ratione ab perferendis, repudiandae molestias amet mollitia
+		reiciendis a magnam, consequuntur atque nam unde architecto dicta dolorum aliquam illo, dolor modi. Debitis officia
+		enim consectetur inventore vitae provident rerum. Sequi a dicta unde odit modi id tempore, quisquam ut quo excepturi
+		iusto amet dolores expedita cumque optio quis incidunt laboriosam. Ipsum nobis facere similique eius dolorum
+		molestias dolore veniam eos totam pariatur enim tempore blanditiis rerum dignissimos aut labore temporibus at a,
+		aliquid animi ut ipsa, excepturi mollitia commodi. Voluptatum reiciendis et praesentium illo est quaerat vero
+		pariatur dolorum dolorem voluptatem fugit ipsa beatae asperiores harum labore perferendis debitis corrupti, doloribus
+		perspiciatis nihil? Aliquam, explicabo? Nemo veritatis quam natus non nisi excepturi neque nostrum voluptates dolor,
+		ad doloremque, deleniti in corporis, a consequatur unde atque! Nisi, illo nihil! In blanditiis reprehenderit nemo
+		tempora voluptatem quos facilis, eum ipsum deserunt obcaecati, provident itaque et. Maiores deserunt non sit ipsa
+		incidunt saepe, quis consectetur animi dignissimos aliquid. Voluptatibus provident, debitis vel, harum praesentium
+		placeat quasi odit iste ut cumque perspiciatis, libero totam reiciendis optio soluta temporibus officiis! Cum quam a
+		voluptas laborum earum officia officiis architecto dolor numquam veritatis alias voluptates tempore ullam placeat
+		esse distinctio, ab, id temporibus. Adipisci facilis dolores ad temporibus. Voluptatibus pariatur totam voluptates
+		omnis, voluptatum harum odit deleniti, amet enim delectus quos est necessitatibus corporis debitis a ullam et,
+		dolorem facere mollitia soluta hic ab voluptate consectetur!
+	</p>
+	<script>
+		let sidebar = document.querySelector('side-bar');
+		document.querySelector('button').onclick = () => {
+			sidebar.show = true;
+		};
+		sidebar.addEventListener('show', function () {
+			console.log('Show', this);
+		});
+		sidebar.addEventListener('hide', function () {
+			console.log('Hide', this);
+		});
+	</script>
+</body>
+
+</html>
